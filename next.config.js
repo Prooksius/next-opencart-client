@@ -1,6 +1,15 @@
+const withTM = require('next-transpile-modules')(['gsap'])
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
+	reactStrictMode: false,
+	images: {
+		domains: ['next-cart.site'],
+	},
+	i18n: {
+		locales: ['en', 'ru'],
+		defaultLocale: 'ru',
+	},
 }
 
-module.exports = nextConfig
+module.exports = withTM(nextConfig)
