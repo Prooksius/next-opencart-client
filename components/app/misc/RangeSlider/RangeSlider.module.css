@@ -1,0 +1,143 @@
+.wrapper {
+	position: relative;
+	background-color: #ffffff;
+	padding: 10px 0 10px 0;
+	border-radius: 10px;
+}
+.container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	width: 100%;
+	height: 35px;
+}
+.input {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	width: 100%;
+	outline: none;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	background-color: transparent;
+	pointer-events: none;
+}
+.track {
+	width: 100%;
+	height: 5px;
+	position: absolute;
+	margin: auto;
+	top: 0;
+	bottom: 0;
+	border-radius: 5px;
+}
+.input::-webkit-slider-runnable-track {
+	-webkit-appearance: none;
+	height: 5px;
+}
+.input::-moz-range-track {
+	-moz-appearance: none;
+	height: 5px;
+}
+.input::-ms-track {
+	appearance: none;
+	height: 5px;
+}
+.input::-webkit-slider-thumb {
+	box-sizing: border-box;
+	appearance: none;
+	-webkit-appearance: none;
+	height: 1.2em;
+	width: 1.2em;
+	background-color: #fff;
+	cursor: pointer;
+	margin-top: -7px;
+	pointer-events: auto;
+	border-radius: 50%;
+	border: 2px solid #3264fe;
+}
+.input:disabled::-webkit-slider-thumb {
+	box-sizing: border-box;
+	appearance: none;
+	-webkit-appearance: none;
+	height: 0;
+	width: 0;
+	pointer-events: none;
+	opacity: 0;
+	background-color: #fff;
+	cursor: pointer;
+	margin-top: -7px;
+}
+.input::-moz-range-thumb {
+	box-sizing: border-box;
+	appearance: none;
+	-webkit-appearance: none;
+	height: 1.2em;
+	width: 1.2em;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 2px solid #3264fe;
+	pointer-events: auto;
+}
+.input:disabled::-moz-range-thumb {
+	box-sizing: border-box;
+	appearance: none;
+	-webkit-appearance: none;
+	height: 0;
+	width: 0;
+	pointer-events: none;
+	opacity: 0;
+}
+.input::-ms-thumb {
+	box-sizing: border-box;
+	appearance: none;
+	height: 1.2em;
+	width: 1.2em;
+	cursor: pointer;
+	border-radius: 50%;
+	background-color: #fff;
+	border: 2px solid #3264fe;
+	pointer-events: auto;
+}
+.input:disabled::-ms-thumb {
+	box-sizing: border-box;
+	appearance: none;
+	-webkit-appearance: none;
+	height: 0;
+	width: 0;
+	pointer-events: none;
+	opacity: 0;
+}
+.input:active::-webkit-slider-thumb {
+	background-color: #ffffff;
+	border: 2px solid #fe3232;
+}
+.valuesContainer {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 3px;
+}
+.minMaxValues {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: -10px;
+	font-size: small;
+}
+.values {
+	padding: 5px 10px;
+	border-radius: 5px;
+	box-shadow: none;
+	border-width: 1px;
+	text-align: center;
+	width: calc(50% - 10px);
+}
